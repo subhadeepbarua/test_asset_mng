@@ -42,8 +42,8 @@ from router import router
 import api
 
 ROOT = Path(__file__).resolve().parent.parent / "fixed_asset_frontend"
-HOST = os.environ.get("ASSETFLOW_HOST", "127.0.0.1")
-PORT = int(os.environ.get("ASSETFLOW_PORT", "8000"))
+HOST = os.environ.get("HOST", "0.0.0.0")
+PORT = int(os.environ.get("PORT", "8000"))
 
 
 class Handler(BaseHTTPRequestHandler):
